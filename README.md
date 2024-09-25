@@ -9,6 +9,15 @@ We divide a DNN into a series of layers and investigate the effect of different 
 We provide relevant implementations under [AWP](https://github.com/csdongxian/AWP), where the implementation based on [Standard AT](https://github.com/locuslab/robust_overfitting) is placed in `AT_AWP_layer_wise`, and the implementation based on [TRADES](https://github.com/yaodongyu/TRADES/) is placed in `TRADES_AWP_layer_wise`. In each folder, we provide the relevant codes of the layer-wise analysis of robust overfitting under different network structures.
 
 ## How to use it
+To observe the impact of different layers towards robust overfitting, for standard AT, run codes as follows:
+```
+python train_cifar10_<network>_AWP_<layers>.py
+```
+For TRADES, run codes as follows:
+```
+python train_trades_cifar_<network>_AWP_<layers>.py
+```
+Users can freely change the configurations, including the networks, layers and so on.
 
 ## Reference Code
 [1] AT: https://github.com/locuslab/robust_overfitting
