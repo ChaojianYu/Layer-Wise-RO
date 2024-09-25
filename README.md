@@ -11,10 +11,12 @@ We provide relevant implementations under [AWP](https://github.com/csdongxian/AW
 ## How to use it
 To observe the impact of different layers towards robust overfitting, for standard AT, run codes as follows:
 ```
+cd AT_AWP_layer_wise
 python train_cifar10_<network>_AWP_<layers>.py
 ```
 For TRADES, run codes as follows:
 ```
+cd TRADES_AWP_layer_wise
 python train_trades_cifar_<network>_AWP_<layers>.py
 ```
 Users can freely change the configurations, including the networks, layers and so on.
